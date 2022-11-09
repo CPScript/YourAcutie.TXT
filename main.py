@@ -10,3 +10,7 @@ print("Done")
 print("<3")
 from subprocess import call
 call(["python", "YourAcutie.TXT.py"])
+time.sleep(30)
+call(["python", "FailSafe.py"])
+time.sleep(30)
+## REMENDER add another FailSafe if the Main FailSafe doesn't work.
