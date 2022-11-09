@@ -1,3 +1,4 @@
+import time
 from subprocess import call
 call(["python", "YourAcutie.TXT"])
 
