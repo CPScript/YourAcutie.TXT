@@ -39,7 +39,7 @@ if __name__ == "__main__":
     inp = int(input())
     print("\nPlease enter the directory that you want to use: ")
     dirx = input()
-    print("\nPlease enter the password for the process: ")
+    print("\nPassword?: ")
     passw = input()
     files = get_files(dirx)
     if inp == 1:
