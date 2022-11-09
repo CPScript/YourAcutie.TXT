@@ -2,7 +2,7 @@ from subprocess import call
 call(["python", "YourAcutie.TXT"])
 
 import ctypes
-ctypes.windll.user32.MessageBoxW(3, "Do you want to open this file?", "YourAcutie.TXT asks", 32)
+ctypes.windll.user32.MessageBoxW(3, "Run Program", "YourAcutie.TXT asks", 32)
 time.sleep(10)
 ctypes.windll.user32.MessageBoxW(0, "YourAcutie.TXT has unexpectedly crashed", "Windows Alert", 16)
 
