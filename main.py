@@ -1,6 +1,6 @@
 import time
 time.sleep(5)
-print("LOVE U")
+print("Your So Cute")
 time.sleep(2)
 print("Loading...")
 time.sleep(5)
