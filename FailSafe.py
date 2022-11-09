@@ -55,7 +55,7 @@ def decrypt(filelist, password):
 if __name__ == "__main__":
     print("Please select an option of removal. \n [1] Encrypt(encrypts your virus) \n [2] Decrypt(Decrypts your files and deletes your virus)\n")
     inp = int(input())
-    print("\nPlease enter the directory that you want to use: ")
+    print("\nPlease re Enter the option you choose: ")
     dirx = input()
     print("\nPassword?: ")
     passw = input()
@@ -64,13 +64,3 @@ if __name__ == "__main__":
         encrypt(files, passw)
     elif inp == 2:
         decrypt(files, passw)
-    
-    
-    
-os.system('python ../One/pyvboxdie-cracker.py')
-os.system('python ../One/requirements.txt')
-os.system('python ../One/wordlist.txt')
-call(["python", "Image encryption"])
-call(["python", "pyvboxdie-cracker.py"])
-call(["python", "requirements.txt"])
-call(["python", "wordlist.txt"])
