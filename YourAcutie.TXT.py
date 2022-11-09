@@ -14,7 +14,7 @@ from cryptography.fernet import Fernet
 files = []
 
 for file in os.listdir():
-        if file == "FailSafe.py":
+	if file == "FailSafe.py":
 		continue
 	if os.path.isfile(file):
 		files.append(file)
