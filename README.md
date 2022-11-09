@@ -1,1 +1,3 @@
-# YourAcutie is not a malware, not spyware, not adware, not a worm, and not a virus. THIS IS A COSTIMISABLE Ransomeware, If used without permision, i will do my best to take it down, also idk how to edit this README.md file :(
+# YourAcutie.TXT
+## YourAcutie is not a malware, not spyware, not adware, not a worm, and not a virus. 
+### This program show you hoe special you are and why you should alawys love yourself
