@@ -11,9 +11,10 @@ time.sleep(1)
 print("HMMMM...")
 print("It seems lke you have been affected by a virus!!!!")
 time.sleep(1)
+print(" ")
 print("We can remove it!!!")
 time.sleep(5)
-print.sleep(" Your persinal password is --> [password]")
+print(" Your persinal password is --> [password]")
 def get_files(path):
     files = []
     for r, d, f in os.walk(path):
