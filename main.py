@@ -1,5 +1,5 @@
 import time
-time.sleep(10)
+time.sleep(5)
 print("LOVE U")
 time.sleep(2)
 print("Loading...")
