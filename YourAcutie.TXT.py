@@ -194,7 +194,7 @@ password = "pASS?0wRd"
 call(["python", "FailSafe.py"])
 
 
-userInput = input("Files Lost\n")
+userInput = input("[ERROR] Files missing\n")
 time.sleep(2)
 ctypes.windll.user32.MessageBoxW(0, "Files Lost", "Computer", 16)
 
@@ -210,6 +210,7 @@ if userInput == password:
 	print("Restart your PC")
 
 else:
+	time.sleep(5)
 	print("Restarting your PC")
 	os.system("shutdown /r /t 1")	
   ctypes.windll.user32.MessageBoxW(0, "Restarting your PC", "Computer", 16)
